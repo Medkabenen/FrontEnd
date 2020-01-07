@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { axiosWithAuth } from "../utils/AxiosWithAuth";
-import { Form, Icon, Input, Button, Checkbox } from "antd";
+import { Form, Icon, Input, Button} from "antd";
 
 import "antd/dist/antd.css"
 
@@ -39,11 +39,9 @@ const Login = (props) => {
                     placeholder="Username"
                     type="text"
                     name="username"
-                    placeholder="Username"
                     value={info.username}
                     onChange={handleChange}
-                />,
-              )}
+                />
         </Form.Item>
 
             <Form.Item>
@@ -51,17 +49,14 @@ const Login = (props) => {
                     prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
                     type="password"
                     placeholder="Password"
-                    type="password"
                     name="password"
-                    placeholder="Password"
                     value={info.password}
                     onChange={handleChange}
-                />,
-              )}
+                />
       </Form.Item>
 
             <Form.Item>
-                <Button type="primary" htmlType="submit" className="login-form-button" className="button" type="submit">
+                <Button type="primary submit" htmlType="submit" className="login-form-button button">
                     Log in
           </Button>
             </Form.Item>
