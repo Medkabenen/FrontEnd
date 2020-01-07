@@ -1,5 +1,6 @@
 import React from 'react'
-// import CounterContainer from '../containers/CounterContainer'
+import CounterContainer from '../containers/CounterContainer'
+import DashboardContainer from "../containers/DashboardContainer";
 import Header from '../components/Header'
 import { Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
@@ -19,7 +20,8 @@ function Routes() {
       <Container>
         <Header />
         <Switch>
-          {/*<Route path="/" component={CounterContainer} />*/}
+          <Route path="/" component={CounterContainer} />
+          <Route path="/dashboard" component={CounterContainer} />
           <Route exact path="/" component={Login} />
           <PrivateRoute exact path="/account" component={Account} />
         </Switch>
