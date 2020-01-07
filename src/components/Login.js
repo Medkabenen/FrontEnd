@@ -21,7 +21,8 @@ const Login = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axiosWithAuth().post('api/login', info)
+        axiosWithAuth()
+            .post('api/login', info)
             .then(res => {
                 localStorage.setItem('token', res.data.payload);
                 setInfo(emptyForm)
@@ -67,7 +68,6 @@ const Login = (props) => {
 
         </Form>
     )
-
 };
 
 export default Login;
