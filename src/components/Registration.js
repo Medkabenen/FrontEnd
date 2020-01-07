@@ -14,7 +14,7 @@ const Registration = ({values, errors, touched, isSubmitting}) => {
     } else {
       console.log("User already exists.");
     }
-  }, [isSubmitting]);
+  }, [isSubmitting, users, values]);
   return (
     <div className="loginForm">
       <Form>
