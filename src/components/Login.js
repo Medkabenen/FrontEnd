@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import { axiosWithAuth } from "../utils/AxiosWithAuth";
+import { Form, Icon, Input, Button, Checkbox } from "antd";
+
+import "antd/dist/antd.css"
 
 const emptyForm = {
   username: '',
@@ -26,34 +29,44 @@ const Login = (props) => {
       })
       .catch(error => console.log(error, "Login Error"))
   }
+
   return (
-    <div className="loginMain">
-      <h1>Welcome to Medcabinet</h1>
-      <div className="loginContainer">
-        <form onSubmit={handleSubmit}>
+    <Form onSubmit={handleSubmit} className="login-form">
+      <Form.Item>
+        <Input
+          prefix={<Icon type="user" style={{ color: 'rgba(0,0,0,.25)' }} />}
+          placeholder="Username"
+          type="text"
+          name="username"
+          placeholder="Username"
+          value={info.username}
+          onChange={handleChange}
+        />,
+      )}
+        </Form.Item>
 
-          <div className="loginForm">
-            <input
-              type="text"
-              name="username"
-              placeholder="Username"
-              value={info.username}
-              onChange={handleChange}
-            />
-            <input
-              type="password"
-              name="password"
-              placeholder="Password"
-              value={info.password}
-              onChange={handleChange}
-            />
-            <button className="button" type="submit">Login</button>
-          </div>
+      <Form.Item>
+        <Input
+          prefix={<Icon type="lock" style={{ color: 'rgba(0,0,0,.25)' }} />}
+          type="password"
+          placeholder="Password"
+          type="password"
+          name="password"
+          placeholder="Password"
+          value={info.password}
+          onChange={handleChange}
+        />,
+      )}
+      </Form.Item>
 
-        </form>
-      </div>
-    </div>
-  );
+      <Form.Item>
+        <Button type="primary" htmlType="submit" className="login-form-button" className="button" type="submit">
+          Log in
+          </Button>
+      </Form.Item>
+
+    </Form>
+  )
 };
 
 export default Login;
