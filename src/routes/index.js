@@ -6,7 +6,7 @@ import { createBrowserHistory } from 'history'
 import styled from '@emotion/styled'
 import Login from "../components/Login";
 import PrivateRoute from "../utils/PrivateRoute";
-import account from "../components/Account"
+import Account from "../components/Account"
 
 const Container = styled.div`
   text-align: center;
@@ -21,7 +21,7 @@ function Routes() {
         <Switch>
           {/*<Route path="/" component={CounterContainer} />*/}
           <Route exact path="/" component={Login} />
-          <PrivateRoute exact path="/account" component={account} />
+          <PrivateRoute exact path="/account" component={Account} />
         </Switch>
       </Container>
     </Router>

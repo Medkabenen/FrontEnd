@@ -18,7 +18,8 @@ const Login = (props) => {
 
   const handleSubmit = e => {
     e.preventDefault();
-    axiosWithAuth().post('api/login', info)
+    axiosWithAuth()
+      .post('api/login', info)
       .then(res => {
         localStorage.setItem('token', res.data.payload);
         setInfo(emptyForm)
@@ -28,7 +29,7 @@ const Login = (props) => {
   }
   return (
     <div className="loginMain">
-      <h1>Welcome to Medcabinet</h1>
+      <h3>Please sign in to your account!</h3>
       <div className="loginContainer">
         <form onSubmit={handleSubmit}>
 
