@@ -1,10 +1,12 @@
-import { Layout, Menu, Icon, Breadcrumb } from 'antd';
+import { Layout, Menu, Icon } from 'antd';
+import Login from "../../components/Login";
 import React from "react";
 import "antd/dist/antd.css";
 
 const { Header, Content, Footer, Sider } = Layout;
+const { SubMenu } = Menu;
 
-const Account = _ => {
+const Dashboard = _ => {
     return (
         <Layout>
             <Sider
@@ -18,8 +20,8 @@ const Account = _ => {
                 <div className="logo" />
                 <Menu theme="dark" mode="inline" defaultSelectedKeys={['4']}>
                     <Menu.Item key="1">
-                        <Icon type="home" />
-                        <span className="nav-text">Home</span>
+                        <Icon type="user" />
+                        <span className="nav-text">nav 1</span>
                     </Menu.Item>
                     <Menu.Item key="2">
                         <Icon type="video-camera" />
@@ -52,27 +54,16 @@ const Account = _ => {
                 </Menu>
             </Sider>
             <Layout style={{ marginLeft: 200 }}>
-                <Header style={{ background: '#fff', padding: 0 }}>
-                    <Breadcrumb>
-                        <Breadcrumb.Item href="">
-                            <Icon type="home" />
-                        </Breadcrumb.Item>
-                        <Breadcrumb.Item href="">
-                            <Icon type="user" />
-                            <span>Application List</span>
-                        </Breadcrumb.Item>
-                        <Breadcrumb.Item>Application</Breadcrumb.Item>
-                    </Breadcrumb>
-                </Header>
+                <Header style={{ background: '#fff', padding: 0 }} />
                 <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
                     <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
-
+                        <Login />
                     </div>
                 </Content>
-                <Footer style={{ textAlign: 'center' }}>Medcabinent TM 2020 </Footer>
+                <Footer style={{ textAlign: 'center' }}>Ant Design Â©2018 Created by Ant UED</Footer>
             </Layout>
         </Layout>
     );
 }
 
-export default Account;
+export default Dashboard;

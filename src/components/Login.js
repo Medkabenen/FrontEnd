@@ -41,9 +41,8 @@ const Login = (props) => {
                     placeholder="Username"
                     value={info.username}
                     onChange={handleChange}
-                />,
-              )}
-        </Form.Item>
+                />
+            </Form.Item>
 
             <Form.Item>
                 <Input
@@ -55,9 +54,8 @@ const Login = (props) => {
                     placeholder="Password"
                     value={info.password}
                     onChange={handleChange}
-                />,
-              )}
-      </Form.Item>
+                />
+            </Form.Item>
 
             <Form.Item>
                 <Button type="primary" htmlType="submit" className="login-form-button" className="button" type="submit">
