@@ -7,6 +7,7 @@ import styled from '@emotion/styled'
 import Login from "../components/Login";
 import PrivateRoute from "../utils/PrivateRoute";
 import Account from "../components/Account"
+import FormikForm from "../components/Registration";
 
 const Container = styled.div`
   text-align: center;
@@ -20,7 +21,8 @@ function Routes() {
         <Header />
         <Switch>
           {/*<Route path="/" component={CounterContainer} />*/}
-          <Route exact path="/" component={Login} />
+          <Route exact path="/login" component={Login} />
+          <Route exact path="/register" component={FormikForm}/>
           <PrivateRoute exact path="/account" component={Account} />
         </Switch>
       </Container>
