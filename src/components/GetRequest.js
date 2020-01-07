@@ -12,7 +12,7 @@ const Btn = styled.button`
 
 const GetRequest = () => {
   //State
-  const [strainEndpoint, setstrainEndpoint] = useState("https://medcab3-api.herokuapp.com/strains");
+  const [strainEndpoint, setStrainEndpoint] = useState("https://medcab3-api.herokuapp.com/strains");
 
   //Side Effects
   useEffect(() => {
