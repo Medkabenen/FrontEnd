@@ -1,12 +1,16 @@
 <h1 align="center">Medcabinet</h1> 
 
-[![generator-create-redux-app](https://img.shields.io/badge/built%20with-generator--create--redux--app-brightgreen.svg)](https://github.com/jonidelv/generator-create-redux-app)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c4eb3b35-9dbf-4eb2-bc6b-7cc0922d0ed3/deploy-status)](https://app.netlify.com/sites/medcabinetog/deploys)
 
 This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
 
 Once the installation is done, you can run some commands inside the project folder:
 
-### `npm start` or `yarn start`
+## Usage
+
+### ... for developers
+
+#### `npm start` or `yarn start`
 
 Runs the app in development mode.<br>
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
@@ -31,4 +35,4 @@ Your app is ready to be deployed!
 
 
 ## License 
-This project is under the [MIT License](./LICENSE)
+This project is under the [MIT License](./LICENSE) 
