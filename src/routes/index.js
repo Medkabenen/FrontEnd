@@ -4,9 +4,9 @@ import Header from '../components/Header'
 import { Router, Route, Switch } from 'react-router-dom'
 import { createBrowserHistory } from 'history'
 import styled from '@emotion/styled'
-import Login from "../components/login";
+import Login from "../components/Login";
 import PrivateRoute from "../utils/PrivateRoute";
-import account from "../components/account"
+import account from "../components/Account"
 
 const Container = styled.div`
   text-align: center;
