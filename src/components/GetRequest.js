@@ -2,6 +2,7 @@ import React, {useState, useEffect} from "react";
 // import {Container, Row, Col} from 'reactstrap';
 import styled from 'styled-components'
 import axios from "axios"
+import Search from "../components/Search";
 // import Card from "./Card";
 
 //Example
@@ -12,22 +13,22 @@ const Btn = styled.button`
 
 const GetRequest = () => {
   //State
-  const [strainEndpoint, setStrainEndpoint] = useState("https://medcab3-api.herokuapp.com/");
-
-  //Side Effects
-  useEffect(() => {
-    axios.get(strainEndpoint)
-      .then((response) => {
-        console.log(response);
-      })
-      .catch((error) => {
-        console.log("Failed to retrieve data.")
-      })
-  }, [strainEndpoint]);
+  // const [strainEndpoint, setStrainEndpoint] = useState("https://medcab3-api.herokuapp.com/");
+  //
+  // //Side Effects
+  // useEffect(() => {
+  //   axios.get(strainEndpoint)
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.log("Failed to retrieve data.")
+  //     })
+  // }, [strainEndpoint]);
 
   return (
     <div>
-
+      <Search/>
     </div>
   )
 };

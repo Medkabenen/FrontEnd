@@ -39,7 +39,7 @@ const Registration = ({values, errors, touched, isSubmitting}) => {
 }
 
 const FormikForm = withFormik({
-  mapPropsToValues({ username, email, password, termsOfService }) {
+  mapPropsToValues({ username, password }) {
     return {
       username: username || "",
       password: password || "",
@@ -56,19 +56,17 @@ const FormikForm = withFormik({
   }),
 
   handleSubmit(values, {resetForm, setErrors, setSubmitting}) {
-    setTimeout(() => {
-      axios
-        .post("https://cors-anywhere.herokuapp.com/https://medcabi3.herokuapp.com/api/auth/register", values)
-        .then(res => {
-          console.log("axios:", res.data);
-          resetForm();
-          // data.push(res.data);
-          // console.log("data:", data);
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    }, 3);
+    axios
+      .post("https://reqres.in/api/users", values)
+      .then(res => {
+        console.log("axios:", res.data);
+        resetForm();
+        // data.push(res.data);
+        // console.log("data:", data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
     setSubmitting(false);
   }
 })(Registration);
