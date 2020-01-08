@@ -9,8 +9,8 @@ import "antd/dist/antd.css";
 
 export default function Search () {
   const [data, setData] = useState({});
-  const [strains, setStrains] = useState([]);
-  const [symptoms, setSymptoms] = useState([]);
+  const [strains, setStrains] = useState({});
+  const [symptoms, setSymptoms] = useState({});
 
   const handleChange = e =>{
     e.preventDefault();
@@ -22,10 +22,18 @@ export default function Search () {
     axios
       .post('https://cors-anywhere.herokuapp.com/https://medcab3-api.herokuapp.com/strains', data)
       .then(r => {
+        let strainObject = {};
         console.log(r);
-        setStrains(r.data); //r.data.[Strain,Type,Rating,Description]
+        let strainIds = Object.keys(r.data['Strain']);
+        console.log("strainIds (array)", strainIds);
+        strainIds.forEach((strain) => {
+          strainObject[strain] = {Strain: r.data.Strain[strain], Type: r.data.Type[strain], Rating: r.data.Rating[strain], Description: r.data.Description[strain]};
+        });
+        setStrains(strainObject); //r.data.[Strain,Type,Rating,Description]
+        console.log("strains (state):", strains);
+        console.log("strainObject:", strainObject);
         // setSymptoms(r.data); //r.data.[Strain,Type,Rating,Effects,Flavor,Description,symptoms_diseases]
-        console.log(data);
+        console.log("data:", data);
       })
       .catch(err => { console.log(err) })
   };
