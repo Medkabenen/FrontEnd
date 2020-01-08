@@ -10,22 +10,25 @@ import "antd/dist/antd.css";
 export default function Search () {
   const [data, setData] = useState({});
   const [strains, setStrains] = useState([]);
+  const [symptoms, setSymptoms] = useState([]);
 
   const handleChange = e =>{
-    e.preventDefault()
+    e.preventDefault();
     setData({...data, [e.target.name]: e.target.value})
   };
 
   const handleSubmit = (e) => {
-    e.preventDefault()
+    e.preventDefault();
     axios
       .post('https://cors-anywhere.herokuapp.com/https://medcab3-api.herokuapp.com/strains', data)
       .then(r => {
-        console.log(r.data);
+        console.log(r);
+        setStrains(r.data); //r.data.[Strain,Type,Rating,Description]
+        // setSymptoms(r.data); //r.data.[Strain,Type,Rating,Effects,Flavor,Description,symptoms_diseases]
         console.log(data);
       })
       .catch(err => { console.log(err) })
-  }
+  };
 
     return (
       <form className='searchForm' onSubmit={handleSubmit}>
