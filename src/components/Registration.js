@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { withFormik, Form, Field} from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+// import {api} from "../utils/AxiosWithAuth";
 
 const Registration = ({values, errors, touched, isSubmitting}) => {
   const [users, setUsers] = useState([]);
@@ -57,7 +58,7 @@ const FormikForm = withFormik({
   handleSubmit(values, {resetForm, setErrors, setSubmitting}) {
     setTimeout(() => {
       axios
-        .post("https://reqres.in/api/users", values)
+        .post("https://cors-anywhere.herokuapp.com/https://medcabi3.herokuapp.com/api/auth/register", values)
         .then(res => {
           console.log("axios:", res.data);
           resetForm();
@@ -67,7 +68,7 @@ const FormikForm = withFormik({
         .catch(err => {
           console.log(err);
         });
-    }, 1000);
+    }, 3);
     setSubmitting(false);
   }
 })(Registration);

@@ -6,7 +6,7 @@ export function getToken() {
 
 export function api() {
     return axios.create({
-        baseURL: "http://localhost:5000",
+        baseURL: "https://cors-anywhere.herokuapp.com/https://medcabi3.herokuapp.com/api/",
         headers: {
             Authorization: getToken()
         }
@@ -17,7 +17,7 @@ export const axiosWithAuth = () => {
     const token = localStorage.getItem('token');
 
     return axios.create ({
-        baseURL: "http://localhost:5000/",
+        baseURL: "https://cors-anywhere.herokuapp.com/https://medcabi3.herokuapp.com/api/",
         headers: {
             Authorization: token
         }
