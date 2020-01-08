@@ -7,7 +7,7 @@ const Registration = ({values, errors, touched, isSubmitting}) => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
     console.log("Pre Push:", users);
-    if (!users.map(item => item.username).includes(values.username) && values.termsOfService) {
+    if (!users.map(item => item.username).includes(values.username)) {
       setUsers([...users, values]);
       console.log("Post Push:", users);
     } else {
@@ -20,22 +20,15 @@ const Registration = ({values, errors, touched, isSubmitting}) => {
         <label>
           Username
           <br/>
-          {touched.username && errors.username && <p>{errors.username}</p>}
           <Field type="text" name="username" placeholder="Username" />
+          {touched.username && errors.username && <p>{errors.username}</p>}
         </label>
         <div>
           <label>
             Password
             <br/>
-            {touched.password && errors.password && <p>{errors.password}</p>}
             <Field type="password" name="password" placeholder="Password" />
-          </label>
-        </div>
-        <div>
-          <label>
-            {touched.termsOfService && errors.termsOfService && <p>{errors.termsOfService}</p>}
-            <Field type='checkbox' name='termsOfService' checked={values.termsOfService}/>
-            Accept Terms of Service
+            {touched.password && errors.password && <p>{errors.password}</p>}
           </label>
         </div>
         <button disabled={isSubmitting} type="submit">Register</button>
@@ -49,7 +42,6 @@ const FormikForm = withFormik({
     return {
       username: username || "",
       password: password || "",
-      termsOfService: termsOfService || false
     };
   },
 
@@ -60,7 +52,6 @@ const FormikForm = withFormik({
     password: Yup.string()
       .min(6, 'Password must be at least 6 characters long.')
       .required('Please enter a password.'),
-    termsOfService: Yup.boolean().oneOf([true], 'Please accept Terms of Service.')
   }),
 
   handleSubmit(values, {resetForm, setErrors, setSubmitting}) {
