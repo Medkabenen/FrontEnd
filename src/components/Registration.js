@@ -55,19 +55,17 @@ const FormikForm = withFormik({
   }),
 
   handleSubmit(values, {resetForm, setErrors, setSubmitting}) {
-    setTimeout(() => {
-      axios
-        .post("https://reqres.in/api/users", values)
-        .then(res => {
-          console.log("axios:", res.data);
-          resetForm();
-          // data.push(res.data);
-          // console.log("data:", data);
-        })
-        .catch(err => {
-          console.log(err);
-        });
-    }, 1000);
+    axios
+      .post("https://reqres.in/api/users", values)
+      .then(res => {
+        console.log("axios:", res.data);
+        resetForm();
+        // data.push(res.data);
+        // console.log("data:", data);
+      })
+      .catch(err => {
+        console.log(err);
+      });
     setSubmitting(false);
   }
 })(Registration);

@@ -22,6 +22,7 @@ export default function Search () {
       .then(r => { console.log(r) })
       .catch(err => { console.log(err) })
   }
+
     return (
       <form className='searchForm' onSubmit={handleSubmit}>
         Name: <input type='text'
