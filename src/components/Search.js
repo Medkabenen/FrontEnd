@@ -8,18 +8,22 @@ import "antd/dist/antd.css";
 
 
 export default function Search () {
-  const [data, setData] = useState({})
+  const [data, setData] = useState({});
+  const [strains, setStrains] = useState([]);
 
   const handleChange = e =>{
     e.preventDefault()
     setData({...data, [e.target.name]: e.target.value})
-  }
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault()
     axios
       .post('https://cors-anywhere.herokuapp.com/https://medcab3-api.herokuapp.com/strains', data)
-      .then(r => { console.log(r) })
+      .then(r => {
+        console.log(r.data);
+        console.log(data);
+      })
       .catch(err => { console.log(err) })
   }
 
