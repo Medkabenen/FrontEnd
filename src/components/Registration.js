@@ -2,6 +2,7 @@ import React, {useEffect, useState} from 'react'
 import { withFormik, Form, Field} from "formik";
 import * as Yup from "yup";
 import axios from "axios";
+// import {api} from "../utils/AxiosWithAuth";
 
 const Registration = ({values, errors, touched, isSubmitting}) => {
   const [users, setUsers] = useState([]);
