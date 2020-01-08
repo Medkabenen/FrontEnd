@@ -38,7 +38,7 @@ const Registration = ({values, errors, touched, isSubmitting}) => {
 }
 
 const FormikForm = withFormik({
-  mapPropsToValues({ username, email, password, termsOfService }) {
+  mapPropsToValues({ username, password }) {
     return {
       username: username || "",
       password: password || "",
