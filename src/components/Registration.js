@@ -6,12 +6,12 @@ import axios from "axios";
 const Registration = ({values, errors, touched, isSubmitting}) => {
   const [users, setUsers] = useState([]);
   useEffect(() => {
-    console.log("Pre Push:", users);
+    // console.log("Pre Push:", users);
     if (!users.map(item => item.username).includes(values.username)) {
       setUsers([...users, values]);
-      console.log("Post Push:", users);
+      // console.log("Post Push:", users);
     } else {
-      console.log("User already exists.");
+      // console.log("User already exists.");
     }
   }, [isSubmitting, users, values]);
   return (
