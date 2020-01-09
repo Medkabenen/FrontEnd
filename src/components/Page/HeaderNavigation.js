@@ -74,6 +74,10 @@ const HeaderNavigation = () => {
                 <Icon type="file-word" />
                 Blog
             </Menu.Item>
+            <Menu.Item>
+                <icon type="login" />
+                Login
+            </Menu.Item>
         </Menu >
 
     )
