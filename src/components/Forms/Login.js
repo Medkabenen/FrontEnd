@@ -1,6 +1,11 @@
 import React, { useState } from "react";
+<<<<<<< HEAD:src/components/Forms/Login.js
 import { api } from "../../utils/AxiosWithAuth";
 import { Form, Icon, Input, Button } from "antd";
+=======
+import {axiosWithAuth} from "../utils/AxiosWithAuth";
+import { Form, Icon, Input, Button} from "antd";
+>>>>>>> 14d6049c08ce79349e7b060377d66bc293d843b8:src/components/Login.js
 
 import "antd/dist/antd.css"
 
@@ -21,7 +26,7 @@ const Login = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        api()
+        axiosWithAuth()
             .post('auth/login', info)
             .then(res => {
                 localStorage.setItem('token', res.data.payload);
