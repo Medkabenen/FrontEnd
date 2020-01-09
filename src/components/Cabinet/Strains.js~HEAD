@@ -1,0 +1,33 @@
+import React from "react";
+import Strain from "../../components/Strain/index";
+
+
+const Strains = (props) => {
+
+<<<<<<< HEAD:src/components/Cabinet/Strains.js
+    return (
+        <div>
+            {props.strains.map((elem, index) => {
+                console.log("reached 2nd!");
+                return (
+                    <Strain Strain={elem.Strain} Type={elem.Type} Rating={elem.Rating} Description={elem.Description} />
+                )
+            })}
+        </div>
+    );
+=======
+  return (
+    <div className="character-list">
+      {props.strains.map((elem) => {
+        console.log("reached 2nd!");
+        return (
+          <Card Strain={elem.Strain} Type={elem.Type} Rating={elem.Rating} Description={elem.Description} />
+        )
+      })}
+    </div>
+  );
+>>>>>>> jeffrey-desir:src/components/CardList.js
+}
+
+export default Strains;
+
