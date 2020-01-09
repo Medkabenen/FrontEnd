@@ -1,7 +1,11 @@
 import React from "react";
 import { Menu, Layout, Icon, Input } from "antd";
 
+import FooterApp from "./FooterApp";
+import Cabinet from "../Cabinet/index";
+
 const { Search } = Input;
+const { Content } = Layout;
 
 const { SubMenu } = Menu;
 
@@ -15,35 +19,25 @@ const HeaderNavigation = () => {
         </Menu.Item>
             <Menu.Item key="Library" >
                 <Icon type="unordered-list" />
-                <Link>  <Layout>
+                <Layout>
 
-                    <SideMenu />
+
                     <Layout style={{ marginLeft: 200 }}>
-                        <HeaderNavigation />
 
-                        <Switch>
-                            <Route path="/about">
-                                <About />
-                            </Route>
-                            <Route path="/users">
-                                <Users />
-                            </Route>
-                            <Route path="/">
-                                <Home />
-                            </Route>
-                        </Switch>
 
-                        <Content style={Style.content}>
+
+
+                        <Content >
 
                             <Cabinet />
                         </Content>
 
-                        <Footer />
+                        <FooterApp />
                     </Layout>
 
                 </Layout>
 
-                </Link> Library
+                Library
         </Menu.Item>
             <Menu.Item>
                 <Icon type="question" />
