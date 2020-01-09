@@ -1,14 +1,12 @@
 import React from "react";
-import { Card } from "antd";
+import InfoCard from "./InfoCard"
 
 
 
 const Strain = _ => {
 
     return (
-        <Card>
-
-        </Card>
+        <InfoCard />
     )
 }
 
