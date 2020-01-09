@@ -1,38 +1,67 @@
-<h1 align="center">Medcabinet</h1> 
+<h1 align="center">MedCabinet > OG</h1>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c4eb3b35-9dbf-4eb2-bc6b-7cc0922d0ed3/deploy-status)](https://app.netlify.com/sites/medcabinetog/deploys)
+<p>
 
-This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
 
-Once the installation is done, you can run some commands inside the project folder:
+
+</p>
+
+> a Machine Learning enhanced Cannabis-strain reference and resource
+
+
+<h3 align="center">
+Clikck <a href="https://medcabinetog.netlify.com/">here</a> for a live demo! 
+ </h3>
+
+## Install
+
+```sh
+yarn install
+```
 
 ## Usage
 
-### ... for developers
+```sh
+yarn run start
+```
 
-#### `npm start` or `yarn start`
+### Repository Strcture
+```yml
 
-Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.<br>
-You will see the build errors and lint warnings in the console.
+### Technologies Used
+* `ant-design` > UI Library 
+## Run tests
 
-### `npm test` or `yarn test`
+```sh
+yarn run test
+```
 
-Runs the test watcher in an interactive mode.<br>
-By default, runs tests related to files changes since the last commit.
+## Authors 👩🏿‍💻
 
-[Read more about testing.](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
+### Ashley Dunham
+> React II Developer<br>
 
-### `npm run build` or `yarn build`
+[Github > (jffry (dsr))](https://github.com) | [Email > jeffreyjdesir@gmail.com](mailto:jeffreyjdesir@gmail.com) | [Website > jffrydsr.codes](https://jffrydsr.codes)
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Handell Desume
+> React I Developer<br>
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+[Github > (jffry (dsr))](https://github.com) | [Email > jeffreyjdesir@gmail.com](mailto:jeffreyjdesir@gmail.com) | [Website > jffrydsr.codes](https://jffrydsr.codes)
+
+### Jeffrey Desir
+> React UI Developer<br>
+
+[Github > (jffry (dsr))](https://github.com) | [Email > jeffreyjdesir@gmail.com](mailto:jeffreyjdesir@gmail.com) | [Website > jffrydsr.codes](https://jffrydsr.codes)
 
 
-## License 
-This project is under the [MIT License](./LICENSE) 
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+## License 📝
+
+Copyright © 2020 [Ashley Dunham, Handell Desume, (jffry (dsr))](https://github.com/MedCabinet).<br>
+This project is under the [MIT License](https://github.com/MedCabinet/FrontEnd/blob/master/LICENSE)
+

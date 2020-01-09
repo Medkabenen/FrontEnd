@@ -18,7 +18,6 @@ export const axiosWithAuth = () => {
 
     return axios.create ({
         baseURL: "https://cors-anywhere.herokuapp.com/https://medcabi3.herokuapp.com/api/",
-        // baseURL: 'https://reqres.in/API/users',
         headers: {
             Authorization: token
         }

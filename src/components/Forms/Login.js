@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {axiosWithAuth} from "../utils/AxiosWithAuth";
-import { Form, Icon, Input, Button} from "antd";
+import { api } from "../../utils/AxiosWithAuth";
+import { Form, Icon, Input, Button } from "antd";
 
 import "antd/dist/antd.css"
 
@@ -21,7 +21,7 @@ const Login = (props) => {
 
     const handleSubmit = e => {
         e.preventDefault();
-        axiosWithAuth()
+        api()
             .post('auth/login', info)
             .then(res => {
                 localStorage.setItem('token', res.data.payload);
@@ -42,7 +42,7 @@ const Login = (props) => {
                     value={info.username}
                     onChange={handleChange}
                 />
-        </Form.Item>
+            </Form.Item>
 
             <Form.Item>
                 <Input
@@ -53,7 +53,7 @@ const Login = (props) => {
                     value={info.password}
                     onChange={handleChange}
                 />
-      </Form.Item>
+            </Form.Item>
 
             <Form.Item>
                 <Button type="primary submit" htmlType="submit" className="login-form-button button">
