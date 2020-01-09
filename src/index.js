@@ -4,10 +4,13 @@ import { Provider } from 'react-redux'
 import store from './store'
 import Routes from './routes'
 import './styles/globalStyles.css'
+import Nav from "./components/Navigation";
+// import {Switch} from "react-router-dom";
 
 
 render(
   <Provider store={store}>
+    <Nav/>
     <Routes />
   </Provider>,
   document.getElementById('root'),

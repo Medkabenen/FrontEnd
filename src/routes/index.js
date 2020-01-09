@@ -9,6 +9,8 @@ import PrivateRoute from "../utils/PrivateRoute";
 import Account from "../components/Account"
 import FormikForm from "../components/Registration";
 import Search from "../components/Search";
+import Logout from "../components/Logout";
+// import Nav from "../components/Navigation";
 // import GetRequest from "../components/GetRequest";
 
 const Container = styled.div`
@@ -27,6 +29,7 @@ function Routes() {
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={FormikForm}/>
           <PrivateRoute exact path="/account" component={Account} />
+          <PrivateRoute exact path='/logout' component={Logout} />
           {/*<Route exact path="/get" component={GetRequest}/>*/}
         </Switch>
       </Container>

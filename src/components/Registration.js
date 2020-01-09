@@ -57,7 +57,8 @@ const FormikForm = withFormik({
 
   handleSubmit(values, {resetForm, setErrors, setSubmitting}) {
     axios
-      .post("https://reqres.in/api/users", values)
+      .post("https://cors-anywhere.herokuapp.com/https://medcabi3.herokuapp.com/api/auth/register", values)
+      // .post('https://reqres.in/API/users', values)
       .then(res => {
         console.log("axios:", res.data);
         resetForm();
