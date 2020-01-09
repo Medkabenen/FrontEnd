@@ -4,22 +4,24 @@ import { Link } from "react-router-dom";
 
 const { Meta } = Card;
 
-const Strain = _ => {
+const Strain = (props) => {
 
     return (
-        <Col>
-            <a>
-                <Card style={{ width: 300, marginTop: 16 }} >
-                    <Meta
-                        avatar={
-                            <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
-                        }
-                        title="Card title"
-                        description="This is the description" />
 
-                </Card>
-            </a>
-        </Col>
+        <Card style={{ width: 300, marginTop: 16 }} >
+            <Meta
+                avatar={
+                    <Avatar src="https://zos.alipayobjects.com/rmsportal/ODTLcjxAfvqbxHnVXCYX.png" />
+                }
+                title="Card title"
+                description="This is the description" />
+            <h2>Strain: {props.Strain}</h2>
+            <p>Type: {props.Type}</p>
+            <p>Rating: {props.Rating}</p>
+            <br />
+            <h3>Description: {props.Description}</h3>
+        </Card>
+
     )
 }
 
