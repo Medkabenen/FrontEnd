@@ -15,7 +15,35 @@ const HeaderNavigation = () => {
         </Menu.Item>
             <Menu.Item key="Library" >
                 <Icon type="unordered-list" />
-                Library
+                <Link>  <Layout>
+
+                    <SideMenu />
+                    <Layout style={{ marginLeft: 200 }}>
+                        <HeaderNavigation />
+
+                        <Switch>
+                            <Route path="/about">
+                                <About />
+                            </Route>
+                            <Route path="/users">
+                                <Users />
+                            </Route>
+                            <Route path="/">
+                                <Home />
+                            </Route>
+                        </Switch>
+
+                        <Content style={Style.content}>
+
+                            <Cabinet />
+                        </Content>
+
+                        <Footer />
+                    </Layout>
+
+                </Layout>
+
+                </Link> Library
         </Menu.Item>
             <Menu.Item>
                 <Icon type="question" />
@@ -33,8 +61,8 @@ const HeaderNavigation = () => {
                 Contact
             </Menu.Item>
 
-            <Menu.Item key="app" disabled>
-                <a href="">
+            <Menu.Item key="app">
+                <a href="https://github.com/orgs/MedCabinet/">
                     <Icon type="github" />
 
                     Github

@@ -2,7 +2,7 @@
 
 <p>
 
-
+<img href="https://travis-ci.org/MedCabinet/FrontEnd.svg?branch=master"/>
 
 </p>
 
@@ -37,6 +37,9 @@ yarn run start
 ```sh
 yarn run test
 ```
+
+## Thanks 
+1. https://tobiasahlin.com/blog/how-to-animate-box-shadow/
 
 ## Authors 👩🏿‍💻
 
