@@ -5,6 +5,7 @@ import SideMenu from "./SideMenu";
 
 import Strain from "../Strain/index";
 import HeaderNavigation from "./HeaderNavigation";
+import Cabinet from "../Cabinet/index";
 
 const { SubMenu } = Menu;
 const { Header, Content, Footer, Sider } = Layout;
@@ -23,7 +24,10 @@ const Page = (props) => {
             <Layout style={{ marginLeft: 200 }}>
                 <HeaderNavigation />
 
-                <Content style={Style.content}><Strain /></Content>
+                <Content style={Style.content}>
+
+                    <Cabinet />
+                </Content>
 
                 <Footer />
             </Layout>
