@@ -7,7 +7,7 @@ export default function Card(props) {
       <p>Type: {props.Type}</p>
       <p>Rating: {props.Rating}</p>
       <br/>
-      <h3>Description: {props.status}</h3>
+      <h3>Description: {props.Description}</h3>
     </div>
   );
 }
