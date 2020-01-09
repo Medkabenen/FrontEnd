@@ -13,7 +13,7 @@ export default function Search () {
   const [data, setData] = useState({});
   const [data2, setData2] = useState({});
   const [strains, setStrains] = useState([]); //useState({strainObject: {831: {Strain: "G-Force", Type: "indica", Rating: 5, Description: "G-Force by Flying Dutchman is a hearty G13 and Sku…rug off stress and help mute aches and pains.    "}, 1512: {Strain: "G-Force", Type: "indica", Rating: 5, Description: "G-Force by Flying Dutchman is a hearty G13 and Sku…rug off stress and help mute aches and pains.    "}, 1577: {Strain: "G-Force", Type: "indica", Rating: 5, Description: "G-Force by Flying Dutchman is a hearty G13 and Sku…rug off stress and help mute aches and pains.    "}, 1965: {Strain: "G-Force", Type: "indica", Rating: 5, Description: "G-Force by Flying Dutchman is a hearty G13 and Sku…rug off stress and help mute aches and pains.    "}, 2257: {Strain: "G-Force", Type: "indica", Rating: 5, Description: "G-Force by Flying Dutchman is a hearty G13 and Sku…rug off stress and help mute aches and pains.    "}}});
-  const [symptoms, setSymptoms] = useState({});
+  const [symptoms, setSymptoms] = useState([]);
 
   const handleChange = e =>{
     e.preventDefault();
@@ -27,6 +27,10 @@ export default function Search () {
    useEffect(() => {
      console.log("strains (state) 2:", strains);
    }, [strains]);
+
+  useEffect(() => {
+    console.log("symptoms (state) 2:", symptoms);
+  }, [symptoms]);
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -55,23 +59,23 @@ export default function Search () {
   const handleSubmit2 = (e) => {
     e.preventDefault();
     axios
-      .post('https://cors-anywhere.herokuapp.com/https://medcab3-api.herokuapp.com/symptom', data)
+      .post('https://cors-anywhere.herokuapp.com/https://medcab3-api.herokuapp.com/symptom', data2)
       .then(r => {
-        let strainObject = {};
-        let strainArray = [];
+        let symptomsObject = {};
+        let symptomsArray = [];
         console.log(r);
-        let strainIds = Object.keys(r.data['Strain']);
-        console.log("strainIds (array)", strainIds);
-        strainIds.forEach((strain) => {
-          strainObject[strain] = {Strain: r.data.Strain[strain], Type: r.data.Type[strain], Rating: r.data.Rating[strain], Description: r.data.Description[strain]};
-          strainArray.push(strainObject[strain]);
+        let symptomsIds = Object.keys(r.data['Strain']);
+        console.log("symptomsIds (array)", symptomsIds);
+        symptomsIds.forEach((symptom) => {
+          symptomsObject[symptom] = {Strain: r.data.Strain[symptom], Type: r.data.Type[symptom], Rating: r.data.Rating[symptom], Description: r.data.Description[symptom]};
+          symptomsArray.push(symptomsObject[symptom]);
         });
         // setStrains({strainObject}); //r.data.[Strain,Type,Rating,Description]
-        setStrains(strainArray);
-        console.log("strains (state) 1:", strains);
-        console.log("strainObject:", strainObject);
+        setSymptoms(symptomsArray);
+        console.log("symptoms (state) 1:", symptoms);
+        console.log("symptomsObject:", symptomsObject);
         // setSymptoms(r.data); //r.data.[Strain,Type,Rating,Effects,Flavor,Description,symptoms_diseases]
-        console.log("data:", data);
+        console.log("data:", data2);
       })
       .catch(err => { console.log(err) })
   };
@@ -93,11 +97,12 @@ export default function Search () {
           <form className='searchForm2' onSubmit={handleSubmit2}>
             Name: <input type='text'
                          name='input'
-                         value={data.input}
+                         value={data2.input}
                          onChange={handleChange2}
           />
             <button type='submit'>Search Strains by Symptoms</button>
           </form>
+          <CardList strains={symptoms}/>
         </div>
       </div>
     )
