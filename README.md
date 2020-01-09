@@ -1,23 +1,17 @@
-<h1 align="center">Welcome to  👋</h1>
+<h1 align="center">MedCabinet > OG</h1>
+
 <p>
-  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
-  <a href="https://github.com/MedCabinet/FrontEnd#readme" target="_blank">
-    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
-  </a>
-  <a href="https://github.com/MedCabinet/FrontEnd/graphs/commit-activity" target="_blank">
-    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
-  </a>
-  <a href="https://github.com/MedCabinet/FrontEnd/blob/master/LICENSE" target="_blank">
-    <img alt="License: MITI " src="https://img.shields.io/github/license/MedCabinet/" />
-  </a>
-  <a href="https://twitter.com/jffffrydsr" target="_blank">
-    <img alt="Twitter: jffffrydsr" src="https://img.shields.io/twitter/follow/jffffrydsr.svg?style=social" />
-  </a>
+
+
+
 </p>
 
 > a Machine Learning enhanced Cannabis-strain reference and resource
 
-### ✨ [Demo](https://medcabinetog.netlify.com/)
+
+<h3 align="center">
+Clikck <a href="https://medcabinetog.netlify.com/">here</a> for a live demo! 
+ </h3>
 
 ## Install
 
@@ -31,26 +25,43 @@ yarn install
 yarn run start
 ```
 
+### Repository Strcture
+```yml
+
+```
+
+### Technologies Used
+* `ant-design` > UI Library 
 ## Run tests
 
 ```sh
 yarn run test
 ```
 
-## Author
+## Authors 👩🏿‍💻
 
-👤 **Ashley Dunham, Handell Desume, Jeffrey Desir**
+### Ashley Dunham
+> React II Developer<br>
 
-* Twitter: [@jffffrydsr](https://twitter.com/jffffrydsr)
-* Github: [@MedCabinet](https://github.com/MedCabinet)
-* LinkedIn: [@jffrydsr](https://linkedin.com/in/jffrydsr)
+[Github > (jffry (dsr))](https://github.com) | [Email > jeffreyjdesir@gmail.com](mailto:jeffreyjdesir@gmail.com) | [Website > jffrydsr.codes](https://jffrydsr.codes)
+
+### Handell Desume
+> React I Developer<br>
+
+[Github > (jffry (dsr))](https://github.com) | [Email > jeffreyjdesir@gmail.com](mailto:jeffreyjdesir@gmail.com) | [Website > jffrydsr.codes](https://jffrydsr.codes)
+
+### Jeffrey Desir
+> React UI Developer<br>
+
+[Github > (jffry (dsr))](https://github.com) | [Email > jeffreyjdesir@gmail.com](mailto:jeffreyjdesir@gmail.com) | [Website > jffrydsr.codes](https://jffrydsr.codes)
+
 
 ## Show your support
 
 Give a ⭐️ if this project helped you!
 
-## 📝 License
+## License 📝
 
-Copyright © 2020 [Ashley Dunham, Handell Desume, Jeffrey Desir](https://github.com/MedCabinet).<br />
-This project is [MITI ](https://github.com/MedCabinet/FrontEnd/blob/master/LICENSE) licensed.
+Copyright © 2020 [Ashley Dunham, Handell Desume, (jffry (dsr))](https://github.com/MedCabinet).<br>
+This project is under the [MIT License](https://github.com/MedCabinet/FrontEnd/blob/master/LICENSE)
 
