@@ -1,38 +1,56 @@
-<h1 align="center">Medcabinet</h1> 
+<h1 align="center">Welcome to  👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.0.1-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/MedCabinet/FrontEnd#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/MedCabinet/FrontEnd/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/MedCabinet/FrontEnd/blob/master/LICENSE" target="_blank">
+    <img alt="License: MITI " src="https://img.shields.io/github/license/MedCabinet/" />
+  </a>
+  <a href="https://twitter.com/jffffrydsr" target="_blank">
+    <img alt="Twitter: jffffrydsr" src="https://img.shields.io/twitter/follow/jffffrydsr.svg?style=social" />
+  </a>
+</p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c4eb3b35-9dbf-4eb2-bc6b-7cc0922d0ed3/deploy-status)](https://app.netlify.com/sites/medcabinetog/deploys)
+> a Machine Learning enhanced Cannabis-strain reference and resource
 
-This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
+### ✨ [Demo](https://medcabinetog.netlify.com/)
 
-Once the installation is done, you can run some commands inside the project folder:
+## Install
+
+```sh
+yarn install
+```
 
 ## Usage
 
-### ... for developers
+```sh
+yarn run start
+```
 
-#### `npm start` or `yarn start`
+## Run tests
 
-Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+yarn run test
+```
 
-The page will reload if you make edits.<br>
-You will see the build errors and lint warnings in the console.
+## Author
 
-### `npm test` or `yarn test`
+👤 **Ashley Dunham, Handell Desume, Jeffrey Desir**
 
-Runs the test watcher in an interactive mode.<br>
-By default, runs tests related to files changes since the last commit.
+* Twitter: [@jffffrydsr](https://twitter.com/jffffrydsr)
+* Github: [@MedCabinet](https://github.com/MedCabinet)
+* LinkedIn: [@jffrydsr](https://linkedin.com/in/jffrydsr)
 
-[Read more about testing.](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
+## Show your support
 
-### `npm run build` or `yarn build`
+Give a ⭐️ if this project helped you!
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📝 License
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Copyright © 2020 [Ashley Dunham, Handell Desume, Jeffrey Desir](https://github.com/MedCabinet).<br />
+This project is [MITI ](https://github.com/MedCabinet/FrontEnd/blob/master/LICENSE) licensed.
 
-
-## License 
-This project is under the [MIT License](./LICENSE) 

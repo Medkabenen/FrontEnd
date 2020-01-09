@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import {api} from "../utils/AxiosWithAuth";
-import { Form, Icon, Input, Button} from "antd";
+import { api } from "../utils/AxiosWithAuth";
+import { Form, Icon, Input, Button } from "antd";
 
 import "antd/dist/antd.css"
 
@@ -42,11 +42,7 @@ const Login = (props) => {
                     value={info.username}
                     onChange={handleChange}
                 />
-<<<<<<< HEAD
-        </Form.Item>
-=======
             </Form.Item>
->>>>>>> jeffrey-desir
 
             <Form.Item>
                 <Input
@@ -57,11 +53,7 @@ const Login = (props) => {
                     value={info.password}
                     onChange={handleChange}
                 />
-<<<<<<< HEAD
-      </Form.Item>
-=======
             </Form.Item>
->>>>>>> jeffrey-desir
 
             <Form.Item>
                 <Button type="primary submit" htmlType="submit" className="login-form-button button">
