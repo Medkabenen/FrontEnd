@@ -1,7 +1,7 @@
 import React from "react";
 import { Row, Col } from "antd";
 
-import Strain from "../../components/Strain/index";
+import Strain from "../Strain/index";
 
 const du = [1, 2, 3, 4, 5, 6, 7, 8, 9]
 

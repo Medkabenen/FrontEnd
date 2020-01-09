@@ -7,7 +7,7 @@ import React from 'react';
 import { Router, Route, Switch } from 'react-router-dom';
 import { createBrowserHistory } from 'history';
 
-import Dashboard from "../components/Dashboard/index";
+import Dashboard from "../components/Cabinet/index";
 
 import Registration from "../components/Forms/Registration";
 import Login from "../components/Forms/Login";

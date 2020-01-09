@@ -5,7 +5,7 @@ const Footer = _ => {
 
 
     return (
-        <Footer> </Footer>
+        <Footer>Copyright MedCabinet > OG 2020</Footer>
     )
 }
 
