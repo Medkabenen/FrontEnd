@@ -1,7 +1,8 @@
 import React from 'react'
-import logo from '../assets/logo.svg'
+import logo from '../assets/logo.png'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
+import backgroundImg from '../assets/cannabis_webbanner_1344x513.jpg'
 
 const rotate360 = keyframes`
   from {
@@ -13,7 +14,7 @@ const rotate360 = keyframes`
 `
 
 const TopBar = styled.div`
-  background-color: #222;
+  background-image: url('${backgroundImg}');
   height: 150px;
   padding: 20px;
   color: #fff;
@@ -26,9 +27,9 @@ const TopBar = styled.div`
 
 function Header() {
   return (
-    <TopBar>
+    <TopBar className='header'>
       <img src={logo} className="redux-logo" alt="logo" />
-      <h2>Welcome to Create Redux App</h2>
+      {/*<h2>Welcome to Create Redux App</h2>*/}
     </TopBar>
   )
 }
