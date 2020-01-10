@@ -1,19 +1,19 @@
+/*
+ Date: 09.01.2020
+ Author: (jffry (dsr))
+ Version: 1.0.0 'Swisher'
+*/
 import { Layout, Menu, Icon, Breadcrumb } from 'antd';
-import Login from "../../components/Login";
-import NavMenu from "../../components/Dashboard/NavMenu";
+
+import NavMenu from "./NavMenu";
 import React, { useState } from "react";
 import "antd/dist/antd.css";
 
 const { Header, Content, Footer, Sider } = Layout;
 
-const { collapseMenu, setCollapseMenu } = useState({
-    collapsed: false
-});
-
-uui0\
 
 
-const Dashboard = _ => {
+const Cabinet = _ => {
     return (
         <Layout>
             <Sider
@@ -39,7 +39,7 @@ const Dashboard = _ => {
                 </Header>
                 <Content style={{ margin: '24px 16px 0', overflow: 'initial' }}>
                     <div style={{ padding: 24, background: '#fff', textAlign: 'center' }}>
-                        <Login />
+
                     </div>
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>Ant Design Â©2018 Created by Ant UED</Footer>
@@ -48,4 +48,4 @@ const Dashboard = _ => {
     );
 }
 
-export default Dashboard;
+export default Cabinet;

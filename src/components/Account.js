@@ -1,17 +1,3 @@
-<<<<<<< HEAD
-import React, { Component } from 'react'
-
-export default class Account extends Component {
-
-  render() {
-    return (
-      <div>
-        <p>Test</p>
-      </div>
-    )
-  }
-}
-=======
 import { Layout, Menu, Icon, Breadcrumb } from 'antd';
 import React from "react";
 import "antd/dist/antd.css";
@@ -90,4 +76,3 @@ const Account = _ => {
 }
 
 export default Account;
->>>>>>> jeffrey-desir
