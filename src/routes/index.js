@@ -25,7 +25,7 @@ function Routes() {
         <Header />
         <Switch>
           {/*<Route path="/" component={CounterContainer} />*/}
-          <Route path="/search" component={Search} />
+          <Route exact path="/" component={Search} />
           <Route exact path="/login" component={Login} />
           <Route exact path="/register" component={FormikForm}/>
           <PrivateRoute exact path="/account" component={Account} />
