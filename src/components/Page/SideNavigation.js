@@ -63,10 +63,7 @@ const SideNavigation = _ => {
 
                         <Menu.Item key="setting:1">
                             <Icon type="medicine-box" />
-                            <StrainModal
-                                buttonName="G-Force"
-                                title="G-Force"
-                                info="dsdsdsddsd" />
+
                         </Menu.Item>
 
                         <Menu.Item key="setting:2">
