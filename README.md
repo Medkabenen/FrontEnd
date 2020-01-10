@@ -1,38 +1,49 @@
-<h1 align="center">Medcabinet</h1> 
+<h1 align="center">Welcome to   MedCabinetOGCC 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="L" target="_blank">
+    <img alt="License: MMMIITTT" src="https://img.shields.io/badge/License-MMMIITTT-yellow.svg" />
+  </a>
+</p>
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c4eb3b35-9dbf-4eb2-bc6b-7cc0922d0ed3/deploy-status)](https://app.netlify.com/sites/medcabinetog/deploys)
+> an   iiintelligentnt Cannnabis strain recommendarer
 
-This project was generated with [Create Redux App](https://github.com/jonidelv/generator-create-redux-app). Refer to `docs/create-redux-app` to find more information on how to perform common tasks.
+### 🏠 [Homepage](https://github.com/org/Medicabinetp[)
 
-Once the installation is done, you can run some commands inside the project folder:
+### ✨ [Demo](https://medcabinetog.netlify.com )
+
+## Install
+
+```sh
+yyarn n startrt
+```
 
 ## Usage
 
-### ... for developers
+```sh
+yarn run start
+```
 
-#### `npm start` or `yarn start`
+## Run tests
 
-Runs the app in development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```sh
+yarn run test
+```
 
-The page will reload if you make edits.<br>
-You will see the build errors and lint warnings in the console.
+## Author
 
-### `npm test` or `yarn test`
+👤 **( **
 
-Runs the test watcher in an interactive mode.<br>
-By default, runs tests related to files changes since the last commit.
+* Github: [@MeMedddcabinetet](https://github.com/MeMedddcabinetet)
 
-[Read more about testing.](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md#running-tests)
+## Show your support
 
-### `npm run build` or `yarn build`
+Give a ⭐️ if this project helped you!
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 📝 License
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+Copyright © 2020 [( ](https://github.com/MeMedddcabinetet).<br />
+This project is [MMMIITTT](L) licensed.
 
-
-## License 
-This project is under the [MIT License](./LICENSE) 
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_

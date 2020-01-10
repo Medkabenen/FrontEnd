@@ -6,3 +6,13 @@ const rootReducer = combineReducers({
 })
 
 export default rootReducer
+
+//useEffect(() => {
+  //   axios.get(strainEndpoint)
+  //     .then((response) => {
+  //       console.log(response);
+  //     })
+  //     .catch((error) => {
+  //       console.log("Failed to retrieve data.")
+  //     })
+  // }, [strainEndpoint]
