@@ -6,11 +6,11 @@
 
 import React from "react";
 
-const Cabinet = _ => {
+const Library = _ => {
 
     return (
         <div></div>
     )
 }
 
-export default Cabinet;
+export default Library;

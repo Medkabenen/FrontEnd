@@ -9,6 +9,7 @@ import { Card, Button, Icon, Avatar } from "antd";
 
 
 import Rating from "../Strain/Rating";
+import LoadingButton from "../Strain/LoadingButton";
 
 const Style = {};
 
@@ -36,9 +37,9 @@ const Strain = (props) => {
             />
             <h3>{props.Strain}</h3>
             <p>Type: {props.Type}</p>
-            <Rating rating={props.Rating} />
+
             <br />
-            <Button>Here</Button>
+            <LoadingButton>Description</LoadingButton>
         </Card>
     )
 }

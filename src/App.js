@@ -22,8 +22,7 @@ import Page from "./components/Page/index";
 import Login from "./components/Forms/Login";
 import Registration from "./components/Forms/Registration";
 import About from "./components/About/index";
-
-
+import Dashboard from "./components/Dashboard/index";
 
 export const history = createBrowserHistory()
 
@@ -38,8 +37,8 @@ const App = () => {
                         <Route path="/about" component={About} />
                         <Route path="/login" component={Login} />
                         <Route path="/cabinet" component={Cabinet} />
-                        <Route exact path="/" component={Cabinet} />
-                        <PrivateRoute exact path="/account" component={Cabinet} />
+                        <Route path="/library" component={Library} />
+                        <PrivateRoute exact path="/account" component={Dashboard} />
                     </Switch>
                 </Page>
             </Router>

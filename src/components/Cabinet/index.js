@@ -5,16 +5,17 @@
 */
 
 import React, { useEffect, useState } from "react";
-import { Input, Layout } from "antd";
-// import { api } from '../utils/AxiosWithAuth'
+import { Input, Layout, Select } from "antd";
 import axios from 'axios'
 // import Card from './Card';
 import StrainCabinet from '../Cabinet/StrainCabinet';
 
 import "antd/dist/antd.css";
 
+const { InputGroup } = Input.Group;
 
 const { Search } = Input;
+const { Option } = Select;
 const { Header } = Layout;
 
 const Style = {
@@ -97,21 +98,24 @@ const Cabinet = _ => {
 
     return (
         <div>
-            <Search
-                style={Style.search}
-                placeholder="Search our catalog"
-                enterButton="Run it"
-                size="large"
-                onSubmit={handleSubmit}
-                onChange={handleChange}
-            />
+
             <form className='searchForm' onSubmit={handleSubmit}>
-                Name: <input type='text'
-                    name='input'
+                <Search
+                    style={Style.search}
+                    placeholder="Search our catalog"
+                    enterButton="Run it"
                     value={data.input}
+                    size="large"
                     onChange={handleChange}
                 />
-                <button type='submit'>Search Strains by Flavor and Effects</button>
+                <InputGroup compact>
+                    <Select defaultValue="Zhejiang">
+                        <Option value="Zhejiang">Flavor and Effects</Option>
+                        <Option value="Jiangsu">Symptons</Option>
+                    </Select>
+                    <Input style={{ width: '50%' }} defaultValue="Flavor and Effect" />
+                </InputGroup>
+
             </form>
             <StrainCabinet strains={strains} />
 

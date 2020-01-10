@@ -12,17 +12,16 @@ import Strain from "../Strain/index";
 const StrainCabinet = (props) => {
 
     return (
-        <div className="">
-            <Row gutter={6}>
-                {props.strains.map((elem) => {
-                    console.log("reached 2nd!");
-                    return (
-                        <Col className="gutter-row" span={6}>
-                            <Strain Strain={elem.Strain} Type={elem.Type} Rating={elem.Rating} />
-                        </Col>)
-                })}
-            </Row>
-        </div>
+
+        <Row gutter={6}>
+            {props.strains.map((elem) => {
+                console.log("reached 2nd!");
+                return (
+                    <Col className="gutter-row" span={6}>
+                        <Strain Strain={elem.Strain} Type={elem.Type} Rating={elem.Rating} />
+                    </Col>)
+            })}
+        </Row>
     );
 }
 

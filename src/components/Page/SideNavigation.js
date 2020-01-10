@@ -5,7 +5,9 @@
  */
 import React from "react";
 import { BrowserRouter as Link } from "react-router-dom";
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, Button } from 'antd';
+
+import StrainModal from "../Cabinet/StrainModal";
 
 
 const { Header, Content, Footer, Sider } = Layout;
@@ -37,14 +39,15 @@ const SideNavigation = _ => {
 
                 <Menu.Item key="2">
                     <Link to="/register">
-                        <Icon type="setings" />
+                        <Icon type="form" />
                         <span className="nav-text">Register</span>
                     </Link>
                 </Menu.Item>
-
                 <Menu.Item key="3">
-                    <Icon type="save" />
-                    <span className="nav-text">Save Strain</span>
+                    <Link to="https://github.com/Medicabinet">
+                        <Icon type="share-alt" />
+                        <span className="nav-text">Share</span>
+                    </Link>
                 </Menu.Item>
 
                 <SubMenu
@@ -55,11 +58,27 @@ const SideNavigation = _ => {
             </span>
                     }
                 >
+
                     <Menu.ItemGroup>
-                        <Menu.Item key="setting:1">Option 1</Menu.Item>
-                        <Menu.Item key="setting:2">Option 2</Menu.Item>
-                        <Menu.Item key="setting:3">Option 3</Menu.Item>
-                        <Menu.Item key="setting:4">Option 4</Menu.Item>
+
+                        <Menu.Item key="setting:1">
+                            <Icon type="medicine-box" />
+                            <StrainModal
+                                buttonName="G-Force"
+                                title="G-Force"
+                                info="dsdsdsddsd" />
+                        </Menu.Item>
+
+                        <Menu.Item key="setting:2">
+                            <Icon type="medicine-box" />G-Force
+                            </Menu.Item>
+                        <Menu.Item key="setting:3">
+                            <Icon type="medicine-box" />G-Force
+                            </Menu.Item>
+                        <Menu.Item key="setting:4">
+                            <Icon type="medicine-box" />G-Force
+                            </Menu.Item>
+
                     </Menu.ItemGroup>
                 </SubMenu>
 

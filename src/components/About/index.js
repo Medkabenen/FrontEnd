@@ -12,50 +12,6 @@ import IconLink from "./IconLink";
 
 const { Paragraph } = Typography;
 
-const menu = (
-    <Menu>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.alipay.com/">
-                1st menu item
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.taobao.com/">
-                2nd menu item
-      </a>
-        </Menu.Item>
-        <Menu.Item>
-            <a target="_blank" rel="noopener noreferrer" href="http://www.tmall.com/">
-                3rd menu item
-      </a>
-        </Menu.Item>
-    </Menu>
-);
-
-const DropdownMenu = () => {
-    return (
-        <Dropdown key="more" overlay={menu}>
-            <Button
-                style={{
-                    border: 'none',
-                    padding: 0,
-                }}
-            >
-                <Icon
-                    type="ellipsis"
-                    style={{
-                        fontSize: 20,
-                        verticalAlign: 'top',
-                    }}
-                />
-            </Button>
-        </Dropdown>
-    );
-};
-
-
-
-
 
 const content = ({ children, extraContent }) => {
     return (
@@ -92,8 +48,8 @@ const About = _ => {
                 <Button key="2">Operation</Button>,
                 <Button key="1" type="primary">
                     Primary
-      </Button>,
-                <DropdownMenu key="more" />,
+      </Button>, []
+
             ]}
             avatar={{
                 src: '../public/imgs/icons/favicon-32x32.png'

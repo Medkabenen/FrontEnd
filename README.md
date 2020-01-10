@@ -1,12 +1,12 @@
-<h1 align="center">Welcome to   MedCabinetOGCC 👋</h1>
+<h1 align="center">MedCabinetOG 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
   <a href="L" target="_blank">
-    <img alt="License: MMMIITTT" src="https://img.shields.io/badge/License-MMMIITTT-yellow.svg" />
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-Mit-yellow.svg" />
   </a>
 </p>
 
-> an   iiintelligentnt Cannnabis strain recommendarer
+> a machine-learning-enhanced _(MLE)_ Cannnabis strain recommender & catalog.
 
 ### 🏠 [Homepage](https://github.com/org/Medicabinetp[)
 
@@ -15,7 +15,7 @@
 ## Install
 
 ```sh
-yyarn n startrt
+yarn start
 ```
 
 ## Usage
@@ -30,10 +30,14 @@ yarn run start
 yarn run test
 ```
 
-## Author
+## Authors👤
 
-👤 **( **
-
+* : [(jffry (dsr))](https://github.com/MeMedddcabinetet)
+* Github: [Ashley Dunham ](https://github.com/MeMedddcabinetet)
+* Github: [@MeMedddcabinetet](https://github.com/MeMedddcabinetet)
+* Github: [@MeMedddcabinetet](https://github.com/MeMedddcabinetet)
+* Github: [@MeMedddcabinetet](https://github.com/MeMedddcabinetet)
+* Github: [@MeMedddcabinetet](https://github.com/MeMedddcabinetet)
 * Github: [@MeMedddcabinetet](https://github.com/MeMedddcabinetet)
 
 ## Show your support
@@ -42,8 +46,8 @@ Give a ⭐️ if this project helped you!
 
 ## 📝 License
 
-Copyright © 2020 [( ](https://github.com/MeMedddcabinetet).<br />
-This project is [MMMIITTT](L) licensed.
+Copyright © 2020 [( ](https://github.com/Medcabinet).<br />
+This project is [MIT ](L) licensed. ☔ 
 
 ***
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
